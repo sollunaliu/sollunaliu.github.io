@@ -11,17 +11,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="container">
-	<div class="row">
-		<h3 class="center-align">Tip Calculator</h1>
-		<form target='#'>
+<body class="container" style="max-width:800px">
+	<div class="row center-align">
+		<h3 class="col s8 offset-s2">Tip Calculator</h1>
+		<form target='#' class="col s8 offset-s2">
 			<div class="input-field">
-				<input placeholder="Price (Tax included)" id="price" type="text" class="validate">
+				<input placeholder="Price (Tax included)" id="price" type="text" class="center-align">
 			</div>
-			<div class="center-align">
+			<div>
 				<input type="submit" class="waves-effect waves-light btn" onclick="event.preventDefault(); test()" />
 			</div>
-			<div class="center-align">
+			<div>
 				<h1 id="output"></h1>
 			</div>
 		</form>
