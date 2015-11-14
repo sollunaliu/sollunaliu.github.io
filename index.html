@@ -13,14 +13,13 @@
 
 <body class="container">
 	<div class="row">
-		<h1 class="center-align">Tip Calculator</h1>
+		<h3 class="center-align">Tip Calculator</h1>
 		<form target='#'>
 			<div class="input-field">
 				<input placeholder="Price (Tax included)" id="price" type="text" class="validate">
-				<label for="first_name">Price (Tax included)</label>
 			</div>
 			<div class="center-align">
-				<input type="submit" class="waves-effect waves-light btn-large" onclick="event.preventDefault(); test()" />
+				<input type="submit" class="waves-effect waves-light btn" onclick="event.preventDefault(); test()" />
 			</div>
 			<div class="center-align">
 				<h1 id="output"></h1>
@@ -35,7 +34,7 @@
 		function test() {
 			var input = document.getElementById('price');
 			var value = parseFloat(input.value);
-			var result = value / 1.1 * 1.15;
+			var result = value + (value / 1.1 * 0.15);
 			console.log(result);
 			var output = document.getElementById('output');
 			output.innerHTML = result.toFixed(2);
